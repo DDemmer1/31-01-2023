@@ -2,7 +2,7 @@ package de.demmer.dennis;
 
 public class GenericMethodTraining {
 
-	public static int getArgumentBack(int variable) {
+	public static <T> T getArgumentBack(T variable) {
 		return variable;
 	}
 	

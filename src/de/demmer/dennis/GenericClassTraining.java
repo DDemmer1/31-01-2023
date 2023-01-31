@@ -1,17 +1,18 @@
 package de.demmer.dennis;
 
-public class GenericClassTraining {
+public class GenericClassTraining<T> {
 	
 	
-	private int var;
-	
-	
+	private T var;
 
-	public int getVar() {
+
+	public T getVar() {
 		return var;
 	}
+	
+	
 
-	public void setVar(int var) {
+	public void setVar(T var) {
 		this.var = var;
 	}
 	
