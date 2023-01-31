@@ -21,7 +21,7 @@ public class ApplicationGenerics {
 		}
 
 		System.out.println("----Generic Class:----");
-		GenericClassTraining genericClassWithString = new GenericClassTraining<String>();
+		GenericClassTraining<String> genericClassWithString = new GenericClassTraining<String>();
 
 		genericClassWithString.setVar("Hallo Welt");
 		System.out.println("Var is: " + genericClassWithString.getVar());
