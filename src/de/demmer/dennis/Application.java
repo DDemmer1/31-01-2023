@@ -5,7 +5,7 @@ public class Application {
 	public static void main(String[] args) {
 		System.out.println("----Generic Method:----");
 		
-		int[] arr = { 1, 2, 3, 4, 5 };
+		Integer[] arr = { 1, 2, 3, 4, 5 };
 		GenericMethodTraining.printArray(arr);
 
 		int i = GenericMethodTraining.getArgumentBack(10);

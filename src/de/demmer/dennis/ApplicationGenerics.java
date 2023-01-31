@@ -24,7 +24,7 @@ public class ApplicationGenerics {
 		GenericClassTraining genericClassWithString = new GenericClassTraining<String>();
 
 		genericClassWithString.setVar("Hallo Welt");
-		System.out.println("Var is: " + genericClass.getVar());
+		System.out.println("Var is: " + genericClassWithString.getVar());
 
 	}
 
