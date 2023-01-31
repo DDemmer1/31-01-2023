@@ -24,6 +24,9 @@ public class Application {
 		System.out.println("----Generic Class:----");
 		GenericClassTraining genericClass = new GenericClassTraining();
 
+		
+		
+		
 		genericClass.setVar(10);
 		System.out.println("Var is: "  + genericClass.getVar());
 		

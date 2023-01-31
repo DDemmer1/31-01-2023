@@ -7,7 +7,7 @@ public class GenericMethodTraining {
 	}
 	
 
-	public static void printArray(int[] array) {
+	public static <T> void printArray(T[] array) {
 		System.out.print("[");
 
 		for (int i = 0; i < array.length; i++) {
@@ -22,15 +22,15 @@ public class GenericMethodTraining {
 
 	
 	//ADVANCED!
-	public static Integer getBiggestVariable(Integer var1, Integer var2, Integer var3) throws Exception  {
+	public static  <T extends Comparable<T>> T getBiggestVariable(T var1, T var2, T var3) throws Exception  {
 
 		
-		if(!(var1 instanceof Comparable<Integer>)) {
+		if(!(var1 instanceof Comparable<T>)) {
 			throw new Exception("Parameter is not of Type Comparable");
 		}
 		
 		
-		Integer biggest = var1;
+		T biggest = var1;
 
 		if (var2.compareTo(biggest) > 0) {
 			biggest = var2;
@@ -39,6 +39,7 @@ public class GenericMethodTraining {
 		if (var3.compareTo(biggest) > 0) {
 			biggest = var3;
 		}
+		
 		return biggest;
 
 	}
