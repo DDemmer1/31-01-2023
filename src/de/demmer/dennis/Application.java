@@ -16,7 +16,7 @@ public class Application {
 		
 		
 		try {
-			int biggest = biggest = GenericMethodTraining.getBiggestVariable(4, 9, 0);
+			int biggest = GenericMethodTraining.getBiggestVariable(4, 9, 0);
 			System.out.println("Biggest var is: "  + biggest);
 		} catch (Exception e) {
 			e.printStackTrace();
